@@ -7,7 +7,7 @@ int rollNo;
 string name;
 int age;
 string address;
-void enterData(){
+void enterData(){ //takes in data of the students
      cout << "Student Roll No.: ";
 cin >> rollNo;
 cin.ignore();
@@ -69,7 +69,7 @@ int main(){
 do {
 cout << "Do you want to add a new student: ";
 cin >> option;
-if (option=='y' || option == 'Y'){
+if (option=='y' || option == 'Y'){ //adds new student to the array
     size++;
     student *temp = new student [size];
     for (int i=0; i<size-1; i++){
@@ -89,7 +89,6 @@ else {break;}
 
 age14(s, size);
 even(s, size);
-
 rollNum(s, size);
 return 0;
 }
