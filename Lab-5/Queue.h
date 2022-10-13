@@ -57,7 +57,7 @@ class Queue{
         while (temp->next!=nullptr){
             temp = temp->next;
             count ++;
-        }
+    }
     int halfPoint = count/2;
     Node <T> *start = head;
     Node<T> *halfwayPoint = head;   
@@ -67,7 +67,6 @@ class Queue{
         tillHalfPoint++;
     }
     halfwayPoint = halfwayPoint->next;
-    
     while (halfwayPoint -> next != nullptr){
         Node <T> *temp = halfwayPoint;
         halfwayPoint = halfwayPoint->next;

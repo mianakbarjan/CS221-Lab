@@ -37,7 +37,6 @@ int main(){
             default:{
                 cout << "Enter correct value: ";
             }
-
         }
     }while (option!=0);
     return 0;
